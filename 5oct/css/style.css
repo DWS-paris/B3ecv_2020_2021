@@ -1,0 +1,13 @@
+/* Sélecteur de balise (TAG) */
+body{
+    background-color: #eee;
+}
+
+.button, button, input[type='button'], input[type='reset'], input[type='submit'] {
+    background-color: blue;
+    border: 0.1rem solid blue;
+}
+
+a{
+    color: blue;
+}
