@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Wemos WebSite</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html{
+                font-size: 62.5%;
+            }
+
+            body{
+                font-size: 1.6rem;
+                text-align: center;
+            }
+
+            header, footer{
+                height: 5vh;
+            }
+
+            main{
+                height: 90vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            h1 span{
+                font-size: .5em;
+                display: block;
+            }
+
+            ul{
+                margin: auto;
+            }
+
+            li{
+                display: inline-block;
+            }
+
+            button{
+                padding: 3rem;
+            }
+
+            li:first-child button{
+                background-color: green;
+            }
+
+            li:last-child button{
+                background-color: yellow;
+            }
+        </style>
+    </head> 
+    <body>
+        <header>
+            <h1>The Wemos WebSite <span>Play with network and ESP8266 microcontroller</span></h1>
+        </header>
+        <main>
+            <ul>
+                <li><button data-color="green" >Off</button></li>
+                <li><button data-color="yellow">Off</button></li>
+            </ul>
+        </main>
+        <footer>
+            <p>Under WTFPL 2020</p>
+        </footer>
+
+        <script>
+
+            /* Attendre le chargemennt du DOM */
+            document.addEventListener('DOMContentLoaded', () => {
+
+                /* Déclarations */
+                var buttonsArray = document.querySelectorAll('button');
+                
+                // Faire une boucle sur le tableau
+                for( let button of buttonsArray ){
+
+                    // Capter le clic sur le bouton
+                    button.addEventListener('click', () => {
+                        // Récupérer la valeur de l'attribut data-color
+                        const colorbtn = button.getAttribute('data-color');
+
+                        // Changer la couleur de fond du body
+                        document.querySelector('body').style.backgroundColor = colorbtn;
+                    });
+                };
+            });
+
+        </script>
+    </body>
+</html>

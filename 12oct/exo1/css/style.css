@@ -1,0 +1,56 @@
+/* 
+Reset
+*/
+    *{ /* Sélectionner toutes les balises HTML */
+        /* Supprimeer les marges */
+        padding: 0;
+        margin: 0;
+
+        /* intégrer le padding et les borders dans les blocs */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /* Passer d'une base 16 à une base 10 */
+    html{
+        font-size: 62.5%; /* 1rem = 10px */
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    a{
+        color: inherit;
+    }
+
+    body{
+        font-size: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: #c7e3f2;
+        padding: 4rem;
+    }
+/**/
+
+/* 
+Header
+*/
+    header{
+        text-align: center;
+        background-color: white;
+        color: black;
+        padding: 6rem;
+    }
+
+    header img{
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+/**/
