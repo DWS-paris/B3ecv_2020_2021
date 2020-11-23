@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chifoumy</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div id="flexBox">
+            <header>
+                <h1>Chimoufy</h1>
+            </header>
+
+            <main>
+                <section id="home" class="hidden">
+                    <form action="#">
+                        <input type="text" name="userName" required minlength="2" placeholder="Définissez votre pseudo">
+                        <button type="submit">OK</button>
+                    </form>
+                </section>
+
+                <section id="game" class="hidden">
+                    <article id="computerGame"></article>
+
+                    <article id="gamePlay">
+                        <ul>
+                            <li>
+                                <button type="button" id="stoneBtn"><img src="./img/pierre.svg" alt="Pierre"></button>
+                            </li>
+                            <li>
+                                <button type="button" id="paperBtn"><img src="./img/feuille.svg" alt="Feuille"></button>
+                            </li>
+                            <li>
+                                <button type="button" id="scissorsBtn"><img src="./img/ciseaux.svg" alt="Ciseaux"></button>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article id="scores">
+                        <ul>
+                            <li id="userPseudo">PSEUDO</li>
+                            <li>Joueur <span id="userScore">0</span> / Ordinateur <span id="computerScore">0</span></li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section id="about" class="hidden"></section>
+            </main>
+
+            <footer>
+                <p>&copy; 2020-2021 - Under WTFPL</p>
+            </footer>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
