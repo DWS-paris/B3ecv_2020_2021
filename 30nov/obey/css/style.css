@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+div{
+    display: flex;
+}
+
+main{
+    border: 5px solid red;
+}
+
+header {
+    order: 2;
+    height: 100vh;
+    border: 5px solid blue;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+li {
+    height: 25%;
+}
+
+li a {
+    transform: rotate(90deg);
+    display: block;
+    padding-left: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    width: 80%;
+    margin: auto;
+}
