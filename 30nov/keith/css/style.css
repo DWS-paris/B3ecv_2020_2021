@@ -8,6 +8,12 @@ img {
     max-width: 100%;
 }
 
+body {
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .flexBox{
     display: flex;
     list-style: none;
@@ -30,4 +36,9 @@ img {
 
 .overImg:hover{
     opacity: 1;
+}
+
+hr {
+    border: 10px solid black;
+    margin: 50px 0;
 }
