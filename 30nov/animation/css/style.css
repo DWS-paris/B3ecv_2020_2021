@@ -1,0 +1,22 @@
+h1, h2{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+article{
+    margin: auto;
+}
+
+#entrance, h2{
+    opacity: 0;
+}
+
+#entrance.display, h2.display{
+    opacity: 1;
+}

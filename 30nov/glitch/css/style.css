@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Sango";
+    src: url("../typo/sango.otf") format("otf"),
+        url("../typo/sango.ttf") format("ttf"),
+        url("../typo/sango.woff") format("woff")
+}
+
+h1{
+    font-family: "Sango", sans-serif;
+}
